@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 import datetime as dt
-from .models import Article
+from .models import Article,NewsLetterRecipients
 from .forms import NewsLetterForm,NewArticleForm
 from django.http import HttpResponse, Http404, HttpResponseRedirect
 from .email import send_welcome_email
